@@ -13,6 +13,15 @@
 		4430867B28BBD7430074D14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4430867928BBD7430074D14A /* Main.storyboard */; };
 		4430867D28BBD7450074D14A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4430867C28BBD7450074D14A /* Assets.xcassets */; };
 		4430868028BBD7450074D14A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4430867E28BBD7450074D14A /* LaunchScreen.storyboard */; };
+		4430868928BBD9C70074D14A /* Vapor in Frameworks */ = {isa = PBXBuildFile; productRef = 4430868828BBD9C70074D14A /* Vapor */; };
+		4430868C28BBDA3F0074D14A /* Leaf in Frameworks */ = {isa = PBXBuildFile; productRef = 4430868B28BBDA3F0074D14A /* Leaf */; };
+		4430868F28BBDC0A0074D14A /* FileServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430868E28BBDC0A0074D14A /* FileServer.swift */; };
+		4430869128BBE2070074D14A /* FileWebRouteCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430869028BBE2070074D14A /* FileWebRouteCollection.swift */; };
+		4430869428BBE3960074D14A /* URL+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430869328BBE3960074D14A /* URL+.swift */; };
+		4430869728BE3CE80074D14A /* files.leaf in Resources */ = {isa = PBXBuildFile; fileRef = 4430869628BE3CE70074D14A /* files.leaf */; };
+		4430869928BE42D80074D14A /* FileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430869828BE42D80074D14A /* FileView.swift */; };
+		4430869B28BE547A0074D14A /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430869A28BE547A0074D14A /* Notifications.swift */; };
+		4430869D28BE61170074D14A /* GetIPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430869C28BE61170074D14A /* GetIPAddress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,13 @@
 		4430867C28BBD7450074D14A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4430867F28BBD7450074D14A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4430868128BBD7450074D14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4430868E28BBDC0A0074D14A /* FileServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServer.swift; sourceTree = "<group>"; };
+		4430869028BBE2070074D14A /* FileWebRouteCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWebRouteCollection.swift; sourceTree = "<group>"; };
+		4430869328BBE3960074D14A /* URL+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+.swift"; sourceTree = "<group>"; };
+		4430869628BE3CE70074D14A /* files.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = files.leaf; sourceTree = "<group>"; };
+		4430869828BE42D80074D14A /* FileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileView.swift; sourceTree = "<group>"; };
+		4430869A28BE547A0074D14A /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		4430869C28BE61170074D14A /* GetIPAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetIPAddress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4430868C28BBDA3F0074D14A /* Leaf in Frameworks */,
+				4430868928BBD9C70074D14A /* Vapor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +74,8 @@
 		4430867228BBD7430074D14A /* FileServer */ = {
 			isa = PBXGroup;
 			children = (
+				4430869228BBE38B0074D14A /* Extensions */,
+				4430868D28BBDBF40074D14A /* Server */,
 				4430867328BBD7430074D14A /* AppDelegate.swift */,
 				4430867528BBD7430074D14A /* SceneDelegate.swift */,
 				4430867728BBD7430074D14A /* ViewController.swift */,
@@ -63,8 +83,37 @@
 				4430867C28BBD7450074D14A /* Assets.xcassets */,
 				4430867E28BBD7450074D14A /* LaunchScreen.storyboard */,
 				4430868128BBD7450074D14A /* Info.plist */,
+				4430869828BE42D80074D14A /* FileView.swift */,
+				4430869A28BE547A0074D14A /* Notifications.swift */,
 			);
 			path = FileServer;
+			sourceTree = "<group>";
+		};
+		4430868D28BBDBF40074D14A /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				4430869528BE3CC30074D14A /* Views */,
+				4430868E28BBDC0A0074D14A /* FileServer.swift */,
+				4430869C28BE61170074D14A /* GetIPAddress.swift */,
+				4430869028BBE2070074D14A /* FileWebRouteCollection.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		4430869228BBE38B0074D14A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4430869328BBE3960074D14A /* URL+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4430869528BE3CC30074D14A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4430869628BE3CE70074D14A /* files.leaf */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +132,10 @@
 			dependencies = (
 			);
 			name = FileServer;
+			packageProductDependencies = (
+				4430868828BBD9C70074D14A /* Vapor */,
+				4430868B28BBDA3F0074D14A /* Leaf */,
+			);
 			productName = FileServer;
 			productReference = 4430867028BBD7430074D14A /* FileServer.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +164,10 @@
 				Base,
 			);
 			mainGroup = 4430866728BBD7430074D14A;
+			packageReferences = (
+				4430868728BBD9C70074D14A /* XCRemoteSwiftPackageReference "vapor" */,
+				4430868A28BBDA3F0074D14A /* XCRemoteSwiftPackageReference "leaf" */,
+			);
 			productRefGroup = 4430867128BBD7430074D14A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +185,7 @@
 				4430868028BBD7450074D14A /* LaunchScreen.storyboard in Resources */,
 				4430867D28BBD7450074D14A /* Assets.xcassets in Resources */,
 				4430867B28BBD7430074D14A /* Main.storyboard in Resources */,
+				4430869728BE3CE80074D14A /* files.leaf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4430869B28BE547A0074D14A /* Notifications.swift in Sources */,
 				4430867828BBD7430074D14A /* ViewController.swift in Sources */,
+				4430869D28BE61170074D14A /* GetIPAddress.swift in Sources */,
+				4430869428BBE3960074D14A /* URL+.swift in Sources */,
+				4430869128BBE2070074D14A /* FileWebRouteCollection.swift in Sources */,
 				4430867428BBD7430074D14A /* AppDelegate.swift in Sources */,
+				4430869928BE42D80074D14A /* FileView.swift in Sources */,
+				4430868F28BBDC0A0074D14A /* FileServer.swift in Sources */,
 				4430867628BBD7430074D14A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +422,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4430868728BBD9C70074D14A /* XCRemoteSwiftPackageReference "vapor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/vapor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		4430868A28BBDA3F0074D14A /* XCRemoteSwiftPackageReference "leaf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/leaf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4430868828BBD9C70074D14A /* Vapor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4430868728BBD9C70074D14A /* XCRemoteSwiftPackageReference "vapor" */;
+			productName = Vapor;
+		};
+		4430868B28BBDA3F0074D14A /* Leaf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4430868A28BBDA3F0074D14A /* XCRemoteSwiftPackageReference "leaf" */;
+			productName = Leaf;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4430866828BBD7430074D14A /* Project object */;
 }
